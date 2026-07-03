@@ -8,4 +8,6 @@ function StudentCounter({ count }) {
   );
 }
 
+
+
 export default StudentCounter;

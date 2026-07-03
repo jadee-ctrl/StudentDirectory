@@ -27,21 +27,21 @@ function RegistrationForm({ addStudent }) {
 
   return (
     <form onSubmit={handleSubmit} className="registration-form">
-        <h2>Registration Form</h2>
-        <input
-            type="text"
-            placeholder="Student Name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-        />
+      <h2>Registration Form</h2>
+      <input
+        type="text"
+        placeholder="Student Name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
 
-        <input
-            type="text"
-            placeholder="Course"
-            value={course}
-            onChange={(e) => setCourse(e.target.value)}
-        />
-        <AddStudent />
+      <input
+        type="text"
+        placeholder="Course"
+        value={course}
+        onChange={(e) => setCourse(e.target.value)}
+      />
+      <AddStudent />
     </form>
   );
 }

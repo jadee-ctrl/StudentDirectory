@@ -1,9 +1,10 @@
-function DeleteStudent({ id, deleteStudent }) {
+function DeleteStudents({ id, deleteStudent }) {
   return (
+
     <button className="delete-btn" onClick={() => deleteStudent(id)}>
       Delete
     </button>
   );
 }
 
-export default DeleteStudent;
+export default DeleteStudents;

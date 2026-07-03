@@ -1,6 +1,6 @@
-import DeleteStudents from "./DeleteStudents";
+import DeleteStudents from "./components/DeleteStudents";
 
-function DisplayStudent({ students, deleteStudent }) {
+function DisplayStudents({ students, deleteStudent }) {
   return (
     <div className="text">
       {students.length > 0 && (
@@ -29,8 +29,10 @@ function DisplayStudent({ students, deleteStudent }) {
           </tbody>
         </table>
       )}
+
+      {students.length === 0 && <p>No students registered yet.</p>}
     </div>
   );
 }
 
-export default DisplayStudent;
+export default DisplayStudents;

@@ -5,6 +5,7 @@ import DisplayStudents from "./components/DisplayStudents";
 import StudentCounter from "./components/StudentCounter";
 
 function App() {
+
   const [students, setStudents] = useState(() => {
     const savedStudents = localStorage.getItem("students");
     return savedStudents ? JSON.parse(savedStudents) : [];
@@ -25,13 +26,10 @@ function App() {
   return (
     <div className="container">
       <h1 className="head">Student Directory</h1>
-
       <RegistrationForm addStudent={addStudent} />
-
       <StudentCounter count={students.length} />
-
       <DisplayStudents students={students} deleteStudent={deleteStudent} />
-    </div>
+    </div >
   );
 }
 
