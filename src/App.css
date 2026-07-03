@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+
+.container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.head {
+    color: #000000;
+}
+
+.text {
+    color: #000000;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.registration-form h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.registration-form input {
+    width: 300px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.registration-form input:focus {
+    outline: none;
+    border-color: #016cf7;
+}
+
+.registration-form button {
+    width: 300px;
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #000000;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.registration-form button:hover {
+    transition: 0.1s ease;
+    background: #016cf7;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.student-table th {
+    background: #000000;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.student-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    background: #f70000;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
